@@ -28,3 +28,18 @@ Goals:
 ## 19/09 UPDATE 2
 
 We no longer need cell centroids - .post exports in nodes already. See `/WEEK8/READ_POST_NODES.ipynb` for simplest case of reading 3 variables. Will try to save them as npz to see how much smaller we can get them. 
+
+Update: not recorded on github but I tried saving some to npz:
+
+``` python 
+    np.savez_compressed(
+            data_folder+data_files[-1].split(".")[0],
+            node_x=node_x,
+            node_y=node_y,
+            U=U,
+            V=V,
+            T=T
+        )
+```
+
+...however the npz file turned out to be 6MB which is larger than the post file itself. I'm not sure what the most efficient filetype is for this yet.
