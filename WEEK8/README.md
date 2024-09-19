@@ -23,3 +23,8 @@ After running this:
 
 Goals:
 - Find a way to get cell centroid coordinates using casefile produced by post
+
+
+## 19/09 UPDATE 2
+
+We no longer need cell centroids - .post exports in nodes already. See `/WEEK8/READ_POST_NODES.ipynb` for simplest case of reading 3 variables. Will try to save them as npz to see how much smaller we can get them. 
