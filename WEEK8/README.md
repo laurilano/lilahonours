@@ -43,3 +43,20 @@ Update: not recorded on github but I tried saving some to npz:
 ```
 
 ...however the npz file turned out to be 6MB which is larger than the post file itself. I'm not sure what the most efficient filetype is for this yet.
+
+------------------
+
+# POST-Friday Meeting
+Based on the cumulative mean and STDEV plots, 1000s of flow time (or for a simulation delta-t of 0.05s, 20000 timesteps) is adequate for statistical convergence. Can save every 2 timesteps.
+Therefore the time stats are:
+- delta-t simulation: 0.05s
+- flowtime: 1000s
+- no. timesteps: 20000
+
+We will try to achieve this using:
+- 5000 iterations in steady state
+- 2000 iterations in transient
+- 20000 iterations in transient, saving .post files every other timestep.
+
+As of a test run in 21/09, this configuration will take approx. 6 hours. 
+
