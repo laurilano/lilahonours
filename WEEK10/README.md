@@ -10,3 +10,7 @@ Main points:
 - 1x case on R2
 - 2x case on R1
 - From 2 points, case seems to be more -ve closer to 1.0 which is unexpected 
+
+UPDATE 12/10 11:31pm:
+- The results are accidentally using CellX and CellY from the test file as clearvars wasnt deactivated. Thsoe results are not true...
+- Can't transfer the file into nodeX and nodeY space yet - all infs and nans in the numerator and denominator to heat flux. 
